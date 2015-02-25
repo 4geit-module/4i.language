@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<module name="4i.language.python" branch="master">
+<module name="4i.language" branch="master">
   <module name="4i" required_branch="master"/>
 </module>
