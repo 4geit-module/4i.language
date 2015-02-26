@@ -1,4 +1,16 @@
 <?xml version="1.0"?>
 <module name="4i.language" branch="master">
   <module name="4i" required_branch="master"/>
+  <node name="project">
+    <node name="require" number="*">
+      <attribute name="env"/>
+      <attribute name="dev"/>
+      <attribute name="name" required="True"/>
+      <attribute name="version"/>
+      <attribute name="variable"/>
+    </node>
+    <node name="module" number="*">
+      <node ref=":require"/>
+    </node>
+  </node>
 </module>
